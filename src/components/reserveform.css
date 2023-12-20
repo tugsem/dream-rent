@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   background: var(--reserve-form-background);
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
   z-index: 1;
 }
@@ -44,8 +44,9 @@
 }
 
 .house_address {
+  word-break: break-all;
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #fff;
   margin-bottom: 1rem;
 }

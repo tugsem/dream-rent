@@ -50,8 +50,6 @@
 /* Logout buttons */
 
 .nav-link.logout {
-  position: absolute;
-  top: 17%;
   color: var(--green);
   text-decoration: underline;
 }
