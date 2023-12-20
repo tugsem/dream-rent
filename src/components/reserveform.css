@@ -6,6 +6,7 @@
   align-items: center;
   height: 100vh;
   background: var(--reserve-form-background);
+
   /* background-size: cover; */
   background-position: center;
   z-index: 1;
