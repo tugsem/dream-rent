@@ -6,9 +6,9 @@ const AddHouse = () => {
   const URL = `${API_URL}houses`;
   const [house, setHouse] = useState({
     address: '',
-    house_type: '',
+    house_type: 'apartment',
     rooms: '',
-    balcony: '',
+    balcony: true,
     size: '',
     image: null,
   });
@@ -88,7 +88,7 @@ const AddHouse = () => {
           />
         </div>
         <div className="form-group custom-select">
-          <select name="balcony" value={house.balcony} onChange={handleChange}>
+          <select name="balcony" onChange={handleChange}>
             <option value="true">Have Balcony</option>
             <option value="false">No Balcony</option>
           </select>
