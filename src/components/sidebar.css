@@ -8,16 +8,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 4vh;
+  gap: 40px;
   white-space: nowrap;
 }
 
 .logo-container {
-  margin-bottom: 10vh;
+  margin-bottom: 40px;
 }
 
 .social-logos {
-  margin-top: 20vh;
+  margin-top: 60px;
 }
 
 .copyright-text {
