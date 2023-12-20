@@ -38,11 +38,11 @@ function Details() {
     return (
       <div className="container">
         <div className="row d-flex p-5">
-          <div className="col-sm-8 h-50">
-            <img src={detail.image_path} className="thumbnail img-responsive img-fluid rounded mx-auto d-block h-50 w-50" alt="house comes here" />
+          <div className="col-sm-8">
+            <img src={detail.image_path} className="thumbnail img-responsive img-fluid rounded" alt="house comes here" />
           </div>
-          <div className="col-sm-3 h-50">
-            <p className="fs-3 text-end">{detail.address}</p>
+          <div className="col-sm-4">
+            <p className="fs-3 text-end text-break">{detail.address}</p>
             <table className="table table-striped">
               <tbody>
                 <tr>
