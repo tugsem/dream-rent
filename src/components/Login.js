@@ -44,7 +44,7 @@ const Login = () => {
       <div className="form-container d-flex flex-column align-items-center">
         <form className="sign-up d-flex flex-column align-items-center" onSubmit={handleLoginSubmit} action="/login" method="POST">
           <div className="login-logo">
-            <img src={'${process.env.PUBLIC_URL}/logo.png'} alt="logo" width="80" height="80" />
+            <img src="./logo.png" alt="logo" width="80" height="80" />
           </div>
           <input id="username" className="input" onChange={(e) => setUserName(e.target.value)} type="text" placeholder="Username:" />
           <input className="login" type="submit" value="Login" />
