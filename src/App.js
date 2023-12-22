@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import AddHouse from './components/AddHouse';
 import HouseList from './components/HouseList';
-// import ReserveList from './components/ReserveList';
 import MyReservations from './components/MyReservations';
 import ReservationForm from './components/ReservationForm';
 import Sidebar from './components/Sidebar';
@@ -38,7 +37,6 @@ const App = () => {
           <Route path="/houses/:id" element={<Details />} />
           <Route path="/reserves" element={<Reserves />} />
           <Route path="/add-house" element={<AddHouse />} />
-          {/* <Route path="/reserve-list" element={<ReserveList />} /> */}
           <Route path="/reservelist" element={<ReserveList />} />
           <Route path="/my-reservations" element={<MyReservations />} />
           <Route path="/delete-house" element={<DeleteHouse />} />
