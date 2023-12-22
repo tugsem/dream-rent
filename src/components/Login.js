@@ -46,9 +46,7 @@ const Login = () => {
           <div className="login-logo">
             <img src="/logo.png" alt="logo" width="80" height="80" />
           </div>
-          <label htmlFor="username">
-            <input className="input" onChange={(e) => setUserName(e.target.value)} type="username" name="username" id="username" placeholder="Username:" />
-          </label>
+          <input id="username" className="input" onChange={(e) => setUserName(e.target.value)} type="text" placeholder="Username:" />
           <input className="login" type="submit" value="Login" />
         </form>
         <p>Don&apos;t have account?</p>

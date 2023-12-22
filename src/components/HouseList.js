@@ -29,10 +29,10 @@ const HouseList = () => {
         if (houses.length > 3) {
           return (
             <div className="pre-next-buttons">
-              <button className="btn btn-prev" type="button" onClick={() => scroll(contentWrapper.current, 25, 100, -1000)}>
+              <button className="btn btn-prev" type="button" aria-label="prev" onClick={() => scroll(contentWrapper.current, 25, 100, -1000)}>
                 <GrCaretPrevious size={25} />
               </button>
-              <button className="btn btn-next" type="button" onClick={() => scroll(contentWrapper.current, 25, 100, 1000)}>
+              <button className="btn btn-next" aria-label="next" type="button" onClick={() => scroll(contentWrapper.current, 25, 100, 1000)}>
                 <GrCaretNext size={25} />
               </button>
             </div>

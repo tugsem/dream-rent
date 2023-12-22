@@ -9,11 +9,12 @@ const House = ({
 }) => (
   <div className="house-container text-center d-flex">
     <div className="img-wrapper">
-    <Link to={`houses/${index}`}>
+      <Link to={`houses/${index}`}>
 
         <img className="homepage-house-img" src={image} alt="house_image" />
 
-    </Link></div>
+      </Link>
+    </div>
     <h3 className="mt-3">
       {type.toUpperCase()}
     </h3>
