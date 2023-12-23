@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { API_URL } from '../api/config';
+import { API_URL } from '../../api/config';
 
 function Details() {
   const { id } = useParams();

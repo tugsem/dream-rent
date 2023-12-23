@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchHouses } from '../redux/house/houses';
-import { fetchUsers } from '../redux/users/users';
-import { addReserves } from '../redux/reserves/reserves';
+import { fetchHouses } from '../../redux/house/houses';
+import { fetchUsers } from '../../redux/users/users';
+import { addReserves } from '../../redux/reserves/reserves';
 
 const Reserve = () => {
   const dispatch = useDispatch();
@@ -24,11 +24,11 @@ const Reserve = () => {
       house_id: e.target.house_id.value,
     }));
     setMessage(
-      `Reservation saved 
-Date: ${e.target.date.value} 
-Time: ${e.target.time.value} 
-No. of visitors: ${e.target.visitors.value} 
-House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text} 
+      `Reservation saved
+Date: ${e.target.date.value}
+Time: ${e.target.time.value}
+No. of visitors: ${e.target.visitors.value}
+House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text}
 Visitor Name: ${e.target.user_id.options[e.target.user_id.selectedIndex].text}`,
     );
     e.target.reset();

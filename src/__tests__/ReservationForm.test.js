@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import TestRenderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import ReservationForm from '../components/ReservationForm';
+import ReservationForm from '../components/reservations/ReservationForm';
 import store from '../redux/configureStore';
 
 describe('ReservationForm', () => {

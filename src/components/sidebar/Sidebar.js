@@ -1,5 +1,6 @@
 import { React } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from './logo.png';
 import SocialIcon from './SocialIcon';
 import './sidebar.css';
 
@@ -9,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className="nav-bar-container">
       <div className={width ? 'no-display' : 'logo-container'}>
-        <img src="logo.png" alt="logo" width="80" height="80" />
+        <img src={logo} alt="logo" width="80" height="80" />
       </div>
       <div className="nav-links-container">
         <NavLink to="/" className={width ? 'mobile-nav-link' : 'nav-link'} exact>

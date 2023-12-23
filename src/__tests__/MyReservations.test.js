@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import TestRenderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import MyReservations from '../components/MyReservations';
+import MyReservations from '../components/reservations/MyReservations';
 import store from '../redux/configureStore';
 
 describe('MyReservations', () => {

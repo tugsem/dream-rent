@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import AddHouse from './components/AddHouse';
-import HouseList from './components/HouseList';
-import MyReservations from './components/MyReservations';
-import ReservationForm from './components/ReservationForm';
-import Sidebar from './components/Sidebar';
-import DeleteHouse from './components/DeleteHouse';
+import AddHouse from './components/house/AddHouse';
+import HouseList from './components/house/HouseList';
+import MyReservations from './components/reservations/MyReservations';
+import ReservationForm from './components/reservations/ReservationForm';
+import Sidebar from './components/sidebar/Sidebar';
+import DeleteHouse from './components/house/DeleteHouse';
 import './App.css';
-import Details from './webpages/details';
-import Reserves from './webpages/reserves';
-import ReserveList from './webpages/reservelist';
-import Login from './components/Login';
+import Details from './components/house/details';
+import Reserves from './components/reservations/reserves';
+import ReserveList from './components/reservations/reservelist';
+import Login from './components/login/Login';
 import { isLogged } from './api/config';
-import Logout from './components/Logout';
-import Hamburger from './components/Hamburger';
+import Logout from './components/login/Logout';
+import Hamburger from './components/sidebar/Hamburger';
 
 const App = () => {
   const location = useLocation();

@@ -1,5 +1,5 @@
 import React from 'react';
-import { logout } from '../api/config';
+import { logout } from '../../api/config';
 
 const Logout = () => {
   logout();

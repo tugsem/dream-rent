@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchHouses } from '../redux/house/houses';
-import { fetchReserves } from '../redux/reserves/reserves';
-import { fetchUsers } from '../redux/users/users';
+import { fetchHouses } from '../../redux/house/houses';
+import { fetchReserves } from '../../redux/reserves/reserves';
+import { fetchUsers } from '../../redux/users/users';
 import './myreservations.css';
 import Reservation from './Reservation';
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchReserves } from '../redux/reserves/reserves';
-import { fetchHouses } from '../redux/house/houses';
-import { fetchUsers } from '../redux/users/users';
+import { fetchReserves } from '../../redux/reserves/reserves';
+import { fetchHouses } from '../../redux/house/houses';
+import { fetchUsers } from '../../redux/users/users';
 
 const ReserveList = () => {
   const dispatch = useDispatch();

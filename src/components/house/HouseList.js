@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { GrCaretNext, GrCaretPrevious } from 'react-icons/gr';
-import { fetchHouses } from '../redux/house/houses';
+import { fetchHouses } from '../../redux/house/houses';
 import House from './House';
 
 const scroll = (element, speed, distance, step) => {

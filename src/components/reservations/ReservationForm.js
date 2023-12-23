@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { fetchHouses } from '../redux/house/houses';
-import { addReserves } from '../redux/reserves/reserves';
-import { fetchUsers } from '../redux/users/users';
+import { fetchHouses } from '../../redux/house/houses';
+import { addReserves } from '../../redux/reserves/reserves';
+import { fetchUsers } from '../../redux/users/users';
 import './reserveform.css';
 
 const ReservationForm = () => {

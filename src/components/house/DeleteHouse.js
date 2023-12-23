@@ -1,7 +1,7 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
 import './deletehouse.css';
-import { API_URL } from '../api/config';
+import { API_URL } from '../../api/config';
 
 const DeleteHouse = () => {
   const [isLoaded, setIsLoaded] = useState(false);

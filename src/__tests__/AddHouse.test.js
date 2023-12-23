@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import TestRenderer from 'react-test-renderer';
-import AddHouse from '../components/AddHouse';
+import AddHouse from '../components/house/AddHouse';
 
 describe('AddHouse', () => {
   it('renders correctly', () => {
