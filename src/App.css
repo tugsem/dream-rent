@@ -5,7 +5,8 @@
   --darker-grey: #9b9b9b;
   --white: #fff;
   --green: #97bf11;
-  --reserve-form-background: url("https://raw.githubusercontent.com/Shubh-Dev/dream-rent/27e26f8dba321e38a0da6f9bb261146edc87ba09/public/loginbgimg.jpg");
+  --mobile-form-background: url('./assets/680w_loginbgimg.jpg');
+  --desktop-form-background: url('./assets/1080_loginbgimg.jpg')
 }
 
 .no-display {
@@ -98,7 +99,7 @@ pre {
 
 /* Desktop Version */
 
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .App {
     display: grid;
     grid-template-columns: 200px 1fr;

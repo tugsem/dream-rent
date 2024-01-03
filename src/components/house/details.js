@@ -39,7 +39,7 @@ function Details() {
       <div className="container">
         <div className="row d-flex p-5">
           <div className="col-sm-8">
-            <img src={detail.image_path} className="thumbnail img-responsive img-fluid rounded" alt="house comes here" />
+            <img src={detail.image_path} loading="lazy" className="thumbnail img-responsive img-fluid rounded" alt="house comes here" />
           </div>
           <div className="col-sm-4">
             <p className="fs-3 text-end text-break">{detail.address}</p>

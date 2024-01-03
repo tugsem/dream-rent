@@ -10,10 +10,10 @@
   left: 0;
   top: 0;
   height: 100vh;
-  background-image: url("../../assets/loginbgimg.jpg");
+  background-image: var(--mobile-form-background);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
 }
 
 .login-logo {
@@ -58,8 +58,8 @@
   box-shadow: 1px 1px 5px 1px #000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 680px) {
   .login_container {
-    background-position-y: 100%;
+    background-image: var(--desktop-form-background);
   }
 }

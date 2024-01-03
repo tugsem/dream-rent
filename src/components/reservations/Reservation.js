@@ -13,7 +13,7 @@ function Reservation(props) {
         <div className="col-sm-12 col-md-12 col-lg-12">
           <div className="reserve-card reserve-card--vertical">
             <div className="reserve-card_img">
-              <img src={house.image_path} alt="" />
+              <img src={house.image_path} alt="" loading="lazy" />
             </div>
             <div className="reserve-card_content col-lg-12">
               <div className="reserve-card_title-section col-lg-12">
