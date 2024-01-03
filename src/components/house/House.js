@@ -8,7 +8,6 @@ const House = ({
   index, image, type, address,
 }) => (
   <div className="house-container text-center d-flex">
-
     <div className="img-wrapper">
       <Link to={`houses/${index}`}>
         <img className="homepage-house-img" src={image} alt="house_image" loading="lazy" />
