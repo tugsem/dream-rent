@@ -1,11 +1,12 @@
 import { React } from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 import SocialIcon from './SocialIcon';
 import './sidebar.css';
 
 const Sidebar = () => {
   const width = window.innerWidth < 768;
-  const logo = require('../../assets/logo.png');
+
   return (
     <div className="nav-bar-container">
       <div className={width ? 'no-display' : 'logo-container'}>
