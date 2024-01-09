@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from '../../api/axios';
 import { login } from '../../api/config';
 import './login.css';
-import logo from './assets/logo.png';
+import logo from '../../assets/logo.png';
 
 const Login = () => {
   const [username, setUserName] = useState('');
