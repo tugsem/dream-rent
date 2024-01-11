@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import axios from '../../api/axios';
 import { login } from '../../api/config';
 import './login.css';
-import logo from '../../assets/logo.png';
 
 const Login = () => {
   const [username, setUserName] = useState('');
@@ -45,7 +44,7 @@ const Login = () => {
       <div className="form-container d-flex flex-column align-items-center">
         <form className="sign-up d-flex flex-column align-items-center" onSubmit={handleLoginSubmit} action="/login" method="POST">
           <div className="login-logo">
-            <img src={logo} alt="logo" width="80" height="80" />
+            <img src="/logo.png" alt="Logo" width="80" height="80" />
           </div>
           <input id="username" className="input" onChange={(e) => setUserName(e.target.value)} type="text" placeholder="Username:" autoComplete="on" />
           <input className="login" type="submit" value="Login" />
