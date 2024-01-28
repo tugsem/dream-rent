@@ -4,12 +4,11 @@ import SocialIcon from './SocialIcon';
 import './sidebar.css';
 
 const Sidebar = () => {
-  // const width = window.innerWidth < 768;
-  // console.log(width)
+  const width = window.innerWidth < 768;
 
   return (
     <div className="nav-bar-container">
-      <div className="logo-container">
+      <div className={width ? 'no-display' : 'logo-container'}>
         <img src="/logo.png" alt="logo" width="80" height="80" />
       </div>
       <div className="nav-links-container">
