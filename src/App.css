@@ -9,9 +9,9 @@
   --desktop-form-background: url('./assets/1080_loginbgimg.jpg')
 }
 
-.no-display {
+/* .no-display {
   display: none;
-}
+} */
 
 * {
   list-style: none;
