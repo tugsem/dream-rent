@@ -19,7 +19,7 @@ const Login = () => {
           setNotice(response.data.message);
         }
       }, (error) => {
-        setNotice(error.response.data.message);
+        setNotice(error.message);
       });
   };
 
