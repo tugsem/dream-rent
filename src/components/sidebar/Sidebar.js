@@ -12,7 +12,7 @@ const Sidebar = () => {
         <img src="/logo.png" alt="logo" width="80" height="80" />
       </div>
       <div className="nav-links-container">
-        <NavLink to="/" className={width ? 'mobile-nav-link' : 'nav-link'} exact>
+        <NavLink to="/" className={width ? 'mobile-nav-link' : 'nav-link'} exact="true">
           HOUSE LIST
         </NavLink>
 

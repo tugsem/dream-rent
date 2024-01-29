@@ -17,12 +17,13 @@ const scroll = (element, speed, distance, step) => {
 
 const HouseList = () => {
   const contentWrapper = useRef(null);
-
   const dispatch = useDispatch();
+  const houses = useSelector((state) => state.houses);
+
   useEffect(() => {
     dispatch(fetchHouses());
   }, [dispatch]);
-  const houses = useSelector((state) => state.houses);
+
   return (
     <div className="homepage-container">
       {(() => {

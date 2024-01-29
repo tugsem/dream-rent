@@ -1,28 +1,22 @@
-import { React, useState, useEffect } from 'react';
-import axios from 'axios';
+import { React, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+// import axios from 'axios';
 import './deletehouse.css';
-import { API_URL } from '../../api/config';
+// import { API_URL } from '../../api/config';
+import { deleteHouse, fetchHouses } from '../../redux/house/houses';
 
 const DeleteHouse = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [houses, setHouses] = useState([]);
+  const houses = useSelector((state) => state.houses);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    axios.get(`${API_URL}houses`)
-      .then((res) => {
-        setIsLoaded(true);
-        setHouses(res.data);
-      });
-  }, []);
+    dispatch(fetchHouses());
+  }, [dispatch]);
 
-  const reRenderPage = (id) => {
-    const newHouses = houses.filter((house) => house.id !== id);
-    setHouses(newHouses);
+  const deleteHouseFromState = (id) => {
+    dispatch(deleteHouse(id));
   };
 
-  if (!isLoaded) {
-    return <div>Loading...</div>;
-  }
   return (
     <div className="delete-house-container">
       { houses.map((house) => (
@@ -49,7 +43,7 @@ const DeleteHouse = () => {
                 {house.size}
               </small>
             </p>
-            <button type="button" className="delete-btn" onClick={() => { axios.delete(`${API_URL}houses/${house.id}`); reRenderPage(house.id); }}>Delete</button>
+            <button type="button" className="delete-btn" onClick={() => deleteHouseFromState(house.id)}>Delete</button>
 
           </div>
 

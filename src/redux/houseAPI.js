@@ -9,7 +9,7 @@ export default class houseAPI {
   };
 
   static deleteHouse = async (id) => {
-    const houseAPIURL = `${API_URL}houses`;
+    const houseAPIURL = `${API_URL}houses/`;
     await fetch(houseAPIURL + id, {
       method: 'DELETE',
       headers: {

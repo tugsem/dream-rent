@@ -59,7 +59,10 @@ function Details() {
                 </tr>
                 <tr>
                   <td>Size</td>
-                  <td>{detail.size}</td>
+                  <td>
+                    {detail.size}
+                    &#13217;
+                  </td>
                 </tr>
               </tbody>
             </table>
