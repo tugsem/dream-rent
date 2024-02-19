@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 // import { fetchHouses } from '../../redux/house/houses';
 // import { fetchUsers } from '../../redux/users/users';
@@ -21,15 +21,15 @@ const Reserve = () => {
       date: e.target.date.value,
       time: e.target.time.value,
       visitors: e.target.visitors.value,
-      user: user,
+      user,
       house_id: e.target.house_id.value,
     }));
     setMessage(
       `Reservation saved
-Date: ${e.target.date.value}
-Time: ${e.target.time.value}
-No. of visitors: ${e.target.visitors.value}
-House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text}`
+      Date: ${e.target.date.value}
+      Time: ${e.target.time.value}
+      No. of visitors: ${e.target.visitors.value}
+      House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text}`,
     );
     e.target.reset();
   };
