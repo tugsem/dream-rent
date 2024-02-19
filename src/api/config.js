@@ -1,5 +1,5 @@
-// const API_URL = 'https://dreamrentapi.onrender.com/api/v1/';
-const API_URL = 'http://localhost:3000/api/v1/';
+const API_URL = 'https://dream-rent-irrw.onrender.com/api/v1/';
+// const API_URL = 'http://localhost:3000/api/v1/';
 
 // saving user_name in the browser's local storage for future use
 const USERNAME = localStorage.getItem('user_name') || 'guest';
