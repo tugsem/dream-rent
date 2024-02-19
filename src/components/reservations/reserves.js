@@ -1,26 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchHouses } from '../../redux/house/houses';
-import { fetchUsers } from '../../redux/users/users';
+// import { fetchHouses } from '../../redux/house/houses';
+// import { fetchUsers } from '../../redux/users/users';
 import { addReserves } from '../../redux/reserves/reserves';
 
 const Reserve = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchHouses());
-    dispatch(fetchUsers());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchHouses());
+  // }, [dispatch]);
 
   const houses = useSelector((state) => state.houses);
-  const users = useSelector((state) => state.users);
+  // const users = useSelector((state) => state.users);
   const [message, setMessage] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const user = localStorage.getItem('user');
     dispatch(addReserves({
       date: e.target.date.value,
       time: e.target.time.value,
       visitors: e.target.visitors.value,
-      user_id: e.target.user_id.value,
+      user: user,
       house_id: e.target.house_id.value,
     }));
     setMessage(
@@ -28,8 +29,7 @@ const Reserve = () => {
 Date: ${e.target.date.value}
 Time: ${e.target.time.value}
 No. of visitors: ${e.target.visitors.value}
-House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text}
-Visitor Name: ${e.target.user_id.options[e.target.user_id.selectedIndex].text}`,
+House Address: ${e.target.house_id.options[e.target.house_id.selectedIndex].text}`
     );
     e.target.reset();
   };
@@ -66,7 +66,7 @@ Visitor Name: ${e.target.user_id.options[e.target.user_id.selectedIndex].text}`,
           ))}
         </select>
       </div>
-      <div className="row-sm-3 pb-3">
+      {/* <div className="row-sm-3 pb-3">
         <select className="form-select" id="user_id">
           <option selected>Choose User...</option>
           {users.map((item) => (
@@ -75,7 +75,7 @@ Visitor Name: ${e.target.user_id.options[e.target.user_id.selectedIndex].text}`,
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
       <div className="row-auto">
         <button type="submit" className="btn btn-success">Reserve</button>
       </div>

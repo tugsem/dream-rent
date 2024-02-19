@@ -1,8 +1,6 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import axios from 'axios';
 import './deletehouse.css';
-// import { API_URL } from '../../api/config';
 import { deleteHouse, fetchHouses } from '../../redux/house/houses';
 
 const DeleteHouse = () => {
