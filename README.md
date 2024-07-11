@@ -58,9 +58,7 @@
 
 ## Visit the live output at: 
 
-[Front End URL](https://dream-rent-booking.netlify.app/)
-
-[Back End URL](https://dream-rent-api-production.up.railway.app/)
+[Link](https://dream-rent-irrw.onrender.com/)
 
 
 ## Getting Started
